@@ -20,3 +20,4 @@ Clicking on any track should proceed to Screen 2. Make it possible to go to Scre
 
 Example of how should it approximately look like.
 ![Example](./example.jpg)
+# music-player
