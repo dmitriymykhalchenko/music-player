@@ -56,47 +56,32 @@ export default function App () {
               key="Track2"
               component={Track2Screen}
               tabBarSelectedItemStyle={{justifyContent:'center',alignItems:'center'}}
-
             />
-
 
           </Scene>
           <Scene
             headerLayoutPreset={'center'}
             hideNavBar={false}
             title="2"
+            component={BlackScreen}
           >
-            <Scene
-              title="2"
-              hideNavBar={false}
-              key="black"
-              component={BlackScreen}
-            />
+
           </Scene>
 
           <Scene
             icon={TabIcon}
             headerLayoutPreset={'center'}
-            hideNavBar={false}
-            title="3">
-            <Scene
-              headerLayoutPreset={'center'}
-              hideNavBar={false}
-              key="Gold"
-              component={MaizeScreen}
-              />
-          </Scene>
-
-          <Scene
-            icon={TabIcon}
-            headerLayoutPreset={'center'}
-            hideNavBar={false}
-            title="4">
-          <Scene
-            icon={TabIcon}
             hideNavBar={false}
             component={MaizeScreen}
-            />
+            title="3">
+          </Scene>
+
+          <Scene
+            icon={TabIcon}
+            headerLayoutPreset={'center'}
+            hideNavBar={false}
+            component={MaizeScreen}
+            title="4">
           </Scene>
           </Scene>
        </Scene>

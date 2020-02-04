@@ -70,9 +70,7 @@ export default class Track2Screen extends Component {
 			});
 			this.setState({ fontLoaded: true });
 		})();
-
 		this._loadNewPlaybackInstance(false);
-
 	}
 
 	async _loadNewPlaybackInstance(playing) {
@@ -111,8 +109,6 @@ export default class Track2Screen extends Component {
 		} else {
 			this.setState({
 				playbackInstanceName: DATA[this.index].title,
-      //  title:DATA[this.index].title
-			//	portrait: PLAYLIST[this.index].image,
 				isLoading: false,
 			});
 		}
@@ -173,8 +169,6 @@ export default class Track2Screen extends Component {
 
 	_onForwardPressed = () => {
 		if (this.playbackInstance != null) {
-      // this._onPlayPausePressed;
-      // Actions.Track3()
 			this._advanceIndex(true);
 			this._updatePlaybackInstanceForIndex(this.state.shouldPlay);
 		}
@@ -198,7 +192,6 @@ export default class Track2Screen extends Component {
 			try {
 				await this.playbackInstance.setRateAsync(rate);
 			} catch (error) {
-				// Rate changing could not be performed, possibly because the client's Android API is too old.
 			}
 		}
 	};

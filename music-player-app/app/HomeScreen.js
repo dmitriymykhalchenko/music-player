@@ -13,21 +13,16 @@ import { Actions,Router, Scene } from 'react-native-router-flux';
 import Constants from 'expo-constants';
 import {DATA} from './assets/constants'
 
-
 function Item({ itemss, index }) {
   return (
 
-
     <View style={styles.item}>
-
       <Text
        onPress={() => Actions.Track2({index})}
        style={styles.title}>{itemss.title}</Text>
     </View>
   );
 };
-
-
 
 export default function HomeScreen () {
   return (
@@ -48,8 +43,6 @@ export default function HomeScreen () {
         }
           keyExtractor={item => item.id}
         />
-
-
       </View>
     </SafeAreaView>
   );
